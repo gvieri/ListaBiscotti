@@ -1,0 +1,47 @@
+<html>
+<head>
+<title> form per esportazione dati cookie </title>
+<!--/**
+ *  myid a really simple way to obtain random id
+ *
+ *  @author  Vieri Giovambattista
+ *  @version 0,0
+ *  @license AGPL
+ *
+ */ -->
+
+</head>
+<body>
+<hr>
+<span id="titoloform">form per esportazione dati cookie</span>
+<hr>
+Salve, se accettate di mandare le informazioni sui cookie presenti sul vs dominio: vi ringrazio e spero di pubblicarle presto sul sito www.ziogianni.com 
+Se non volete mandare queste informazioni, non inviatele. O modificatele a vs piacere. Questa non e' una raccolta scientifica... ma solo statistica.... cerco di sapere solo quali cookie sono piu' usati e grosso modo che domini usano il tool. 
+
+Se volete modificare il codice in modo che la raccolta sia fatta sul vs sito: modificate la linea sottostante scommentandola e, invece commentando la seguente: 
+<br>
+<code> 
+&lt;form id="formesportazione" method="get" action="http://wwww.ziogianni.com/raccoglibiscotti/memorizza.php"&gt;
+</code>
+
+<!-- 
+<form id="formesportazione" method="get" action="memorizza.php">
+-->
+<form id="formesportazione" method="get" action="http://www.ziogianni.com/raccoglibiscotti/memorizza.php">
+<table>
+<tr><td>dominio:</td><td>
+<input type="text" name="websitedomain" id="websitedomain"> 
+</td></tr>
+<tr><td>data e ora:</td><td>
+<input type="text" name="dateandtime" id="dateandtime">
+</td></tr>
+</table>
+<bR>
+Cookie raw data : <br>
+<textarea id="cookierawdata" cols="80" rows="10" name="cookierawdata"> </textarea>
+<br>
+<input type="submit" name="submit" value="manda dati a terzi">
+</form>
+</body>
+</html>
+
